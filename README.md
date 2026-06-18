@@ -1,4 +1,4 @@
-# Salesforce Lab — Case Studies Portal
+# Salesforce Lab — Case Studies Portal 🚀
 
 A decoupled, data-driven portfolio portal documenting a complete hands-on learning journey across **14 real-world Salesforce Admin Case Studies** (from greenfield Org setups to advanced Security, Flow Automations, Change Set deployments, and Einstein AI integration).
 
