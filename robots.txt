@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avinashg0y4l.github.io/salesforcelab/sitemap.xml
