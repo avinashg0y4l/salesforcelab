@@ -231,10 +231,29 @@
     // 4. Implementation Tab
     var implPanel = document.getElementById('pd-implementation');
     if (implPanel) {
-      var stepsHTML = study.implementationSteps.map(function(s){ return '<li>' + s + '</li>'; }).join('');
+      var stepsHTML = study.implementationSteps.map(function(s){
+        if (typeof s === 'string') {
+          return '<li>' + s + '</li>';
+        } else {
+          var screenshotHTML = '';
+          if (s.screenshots && s.screenshots.length > 0) {
+            screenshotHTML = s.screenshots.map(function(scr){
+              var placeholderUrl = 'https://placehold.co/600x400/f4f6f9/0176d3?text=' + encodeURIComponent('Placeholder: ' + scr.caption);
+              return `
+                <div class="step-screenshot" style="margin: 12px 0 20px 0; max-width: 650px; border: 1px solid var(--th-border); border-radius: 6px; overflow: hidden; background: #fff;">
+                  <img src="${scr.url}" alt="${scr.caption}" style="width: 100%; display: block; max-height: 400px; object-fit: contain; background: #fcfdfe;" onerror="this.onerror=null; this.src='${placeholderUrl}';">
+                  <div class="caption" style="background: #f4f6f9; padding: 8px 12px; font-size: 12px; font-weight: 600; color: var(--th-navy); border-top: 1px solid var(--th-border);">${scr.caption}</div>
+                </div>
+              `;
+            }).join('');
+          }
+          return '<li style="margin-bottom: 24px;">' + s.text + screenshotHTML + '</li>';
+        }
+      }).join('');
+
       implPanel.innerHTML = `
         <h3 id="h-pd-impl-steps">Implementation Steps</h3>
-        <ol>${stepsHTML}</ol>
+        <ol style="padding-left: 20px;">${stepsHTML}</ol>
       `;
     }
 

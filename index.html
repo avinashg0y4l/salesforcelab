@@ -1,272 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Pathways — Salesforce Admin Portfolio</title>
+  <title>Salesforce Lab — Salesforce Admin Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<a href="#main-content" class="skip-link">Skip to content</a>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
-<!-- ============ TOP BAR ============ -->
-<header class="topbar">
-  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
-  <div class="brand"><span class="brand-mark">AP</span><span class="brand-text">Admin Pathways</span></div>
-  <div class="topbar-search">
-    <span>🔍</span>
-    <input type="text" placeholder="Search case studies, topics, features…" aria-label="Search portfolio">
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <div class="brand"><span class="brand-mark">AP</span><span class="brand-text">Salesforce Lab</span></div>
+    <div class="topbar-search">
+      <span>🔍</span>
+      <input type="text" placeholder="Search case studies, topics, features…" aria-label="Search portfolio">
+    </div>
+    <div class="topbar-right">
+      <div class="readiness-pill"><span class="readiness-dot"></span><span class="rp-text">Job Readiness 64%</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="shell">
+
+    <!-- ============ LEFT SIDEBAR ============ -->
+    <nav class="sidebar" id="sidebar" aria-label="Primary">
+      <div class="navgroup">
+        <a class="navlink active" data-section="home" href="#home">Home</a>
+      </div>
+      <div class="navgroup">
+        <a class="navlink" data-section="learning-journey" href="#learning-journey">Learning Journey</a>
+      </div>
+
+      <div class="sidebar-section-label">Case Studies</div>
+      <div class="navgroup">
+        <a class="navlink navgroup-toggle open" data-toggle="projects-sub" href="#projects">Salesforce Admin Case
+          Studies <span class="count">14</span></a>
+        <div class="subnav open" id="projects-sub">
+          <a class="navlink" data-section="projects" data-filter="all" href="#projects">All Case Studies</a>
+          <a class="navlink" data-section="projects" data-filter="M1-M3" href="#projects">Setup &amp; Data Model</a>
+          <a class="navlink" data-section="projects" data-filter="M4-M5" href="#projects">Security &amp; Migration</a>
+          <a class="navlink" data-section="projects" data-filter="M6-M7" href="#projects">Flows &amp; Automation</a>
+          <a class="navlink" data-section="projects" data-filter="M8-M10" href="#projects">Analytics &amp; Services</a>
+          <a class="navlink" data-section="projects" data-filter="M11-M14" href="#projects">Data Audit &amp; Deploy</a>
+        </div>
+      </div>
+
+      <div class="sidebar-section-label">Preparation</div>
+      <div class="navgroup">
+        <a class="navlink" data-section="interview-prep" href="#interview-prep">Interview Preparation</a>
+      </div>
+
+      <div class="sidebar-section-label">Evidence</div>
+      <div class="navgroup">
+        <a class="navlink navgroup-toggle open" data-toggle="evidence-sub" href="#portfolio-evidence">Portfolio
+          Evidence</a>
+        <div class="subnav open" id="evidence-sub">
+          <a class="navlink" data-section="portfolio-evidence" data-tab="screenshots"
+            href="#portfolio-evidence">Screenshots</a>
+          <a class="navlink" data-section="portfolio-evidence" data-tab="documentation"
+            href="#portfolio-evidence">Documentation</a>
+        </div>
+      </div>
+
+      <div class="sidebar-section-label">Profile</div>
+      <div class="navgroup">
+        <a class="navlink" data-section="about" href="#about">About Me</a>
+      </div>
+    </nav>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main" id="main-content">
+
+      <!-- ===== HOME ===== -->
+      <section class="section active" id="sec-home" data-section="home">
+        <div class="breadcrumb"><span class="current">Home</span></div>
+        <span class="eyebrow">Salesforce Admin Documentation Portal</span>
+        <h1 id="h-home-title">Building admin judgment, one business problem at a time.</h1>
+        <p class="lede">This is a living record of how I think through access models, automation, and data architecture
+          as a Salesforce Administrator — every case study documents the problem, the decision, and the reasoning behind
+          it.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-value">7<span style="font-size:16px;color:var(--th-muted);">/14</span></div>
+            <div class="stat-label">Modules Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">34</div>
+            <div class="stat-label">Features Learned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">71<span style="font-size:16px;color:var(--th-muted);">%</span></div>
+            <div class="stat-label">Admin Skill Score</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">64<span style="font-size:16px;color:var(--th-muted);">%</span></div>
+            <div class="stat-label">Job Readiness Score</div>
+          </div>
+        </div>
+
+        <h2 id="h-home-continue">Continue the Journey</h2>
+        <div class="trail">
+          <div class="trail-step done">
+            <div class="trail-dot">✓</div>
+            <div class="trail-step-title">M1 · Org Setup</div>
+          </div>
+          <div class="trail-step done">
+            <div class="trail-dot">✓</div>
+            <div class="trail-step-title">M2 · Security Models</div>
+          </div>
+          <div class="trail-step active">
+            <div class="trail-dot">3</div>
+            <div class="trail-step-title">M3 · Flows &amp; Automation</div>
+          </div>
+          <div class="trail-step">
+            <div class="trail-dot">4</div>
+            <div class="trail-step-title">M4 · Reports &amp; Dashboards</div>
+          </div>
+        </div>
+
+        <h2 id="h-home-featured">Featured Case Study</h2>
+        <div class="project-grid" style="grid-template-columns:1fr;" id="featuredProjectContainer">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ===== LEARNING JOURNEY ===== -->
+      <section class="section" id="sec-learning-journey" data-section="learning-journey">
+        <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span
+            class="current">Learning Journey</span></div>
+        <span class="eyebrow">Progress Dashboard</span>
+        <h1 id="h-lj-title">Learning Journey</h1>
+        <p class="lede">A running tally of what's been built, what it maps to on Trailhead, and how ready this portfolio
+          is for a real admin role.</p>
+
+        <h2 id="h-lj-scores">Readiness Scores</h2>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-value">71%</div>
+            <div class="stat-label">Portfolio Readiness</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">64%</div>
+            <div class="stat-label">Job Readiness</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">58%</div>
+            <div class="stat-label">Interview Readiness</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">34</div>
+            <div class="stat-label">Trailhead-Equivalent Skills</div>
+          </div>
+        </div>
+
+        <h2 id="h-lj-skills">Skills Learned by Category</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+              <th>Projects Applied</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Security &amp; Access</td>
+              <td>Profiles, Roles, OWD, Permission Sets, Sharing Rules</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Automation</td>
+              <td>Flow (Record-Triggered, Screen Flow), Validation Rules</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Data Management</td>
+              <td>Data Loader, Duplicate Rules, Matching Rules</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Reports &amp; Dashboards</td>
+              <td>Report Types, Dashboard Filters, Dynamic Dashboards</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="h-lj-log">Project Completion Log</h2>
+        <div class="callout success">
+          <span class="callout-title">7 of 14 projects completed</span>
+          Average time to complete a Security Model project: 5.5 hours. Next milestone: finish M3 (Automation with Flow)
+          to unlock the Reports &amp; Dashboards module.
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section class="section" id="sec-projects" data-section="projects">
+        <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span
+            class="current">Case Studies</span></div>
+        <span class="eyebrow">Module Library</span>
+        <h1 id="h-proj-title">Salesforce Admin Case Studies</h1>
+        <p class="lede">A running curriculum of 14 real-world business case studies, representing hands-on
+          implementation problem solving.</p>
+
+        <h2 id="h-proj-list">All Case Studies</h2>
+        <div class="project-grid" id="projectGrid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ===== PROJECT DETAIL (template) ===== -->
+      <section class="section" id="sec-project-detail" data-section="project-detail">
+        <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><a
+            href="#projects" data-section="projects">Case Studies</a><span class="sep">/</span><span
+            class="current">Detail View</span></div>
+        <span class="eyebrow" id="pd-eyebrow">Module M2 · Security Models</span>
+        <h1 id="h-pd-title">PropNest Realty — User Access Gone Wrong</h1>
+        <p class="lede" id="pd-lede">Industry: Real Estate &nbsp;·&nbsp; Company size: 80 users &nbsp;·&nbsp; Status:
+          <strong style="color:var(--th-green)">Completed</strong></p>
+
+        <div class="tabs">
+          <div class="tab active" data-tab-target="pd-overview">Overview</div>
+          <div class="tab" data-tab-target="pd-design">Solution Design</div>
+          <div class="tab" data-tab-target="pd-decisions">Why I Chose This Solution</div>
+          <div class="tab" data-tab-target="pd-implementation">Implementation</div>
+          <div class="tab" data-tab-target="pd-testing">Testing &amp; Screenshots</div>
+          <div class="tab" data-tab-target="pd-resume">Resume &amp; Interview</div>
+        </div>
+
+        <div class="tabpanel active" id="pd-overview">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <div class="tabpanel" id="pd-design">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <div class="tabpanel" id="pd-decisions">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <div class="tabpanel" id="pd-implementation">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <div class="tabpanel" id="pd-testing">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <div class="tabpanel" id="pd-resume">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ===== INTERVIEW PREP ===== -->
+      <section class="section" id="sec-interview-prep" data-section="interview-prep">
+        <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span
+            class="current">Interview Preparation</span></div>
+        <span class="eyebrow">Practice Bank</span>
+        <h1 id="h-ip-title">Interview Preparation</h1>
+        <p class="lede">Every completed project contributes questions here, grouped by topic, so practice stays tied to
+          real decisions made — not generic flashcards.</p>
+
+        <h2 id="h-ip-security">Security &amp; Access</h2>
+        <ul>
+          <li>How do you decide between Org-Wide Defaults of Private vs. Public Read Only?</li>
+          <li>What's the difference between a Role Hierarchy and a Sharing Rule, and when would you need both?</li>
+        </ul>
+        <h2 id="h-ip-automation">Automation</h2>
+        <ul>
+          <li>When would you choose a Screen Flow over a Record-Triggered Flow?</li>
+        </ul>
+      </section>
+
+      <!-- ===== PORTFOLIO EVIDENCE ===== -->
+      <section class="section" id="sec-portfolio-evidence" data-section="portfolio-evidence">
+        <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span
+            class="current">Portfolio Evidence</span></div>
+        <span class="eyebrow">Proof of Work</span>
+        <h1 id="h-pe-title">Portfolio Evidence</h1>
+        <p class="lede">Screenshots and supporting documentation that back up every claim made in the project write-ups.
+        </p>
+
+        <h2 id="h-pe-screens">Screenshots</h2>
+        <div class="callout">No screenshots uploaded yet. Each project's testing tab lists exactly which screenshots to
+          capture.</div>
+
+        <h2 id="h-pe-docs">Documentation</h2>
+        <div class="callout">Architecture diagrams and decision logs will appear here as projects are completed.</div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section class="section" id="sec-about" data-section="about">
+        <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span
+            class="current">About Me</span></div>
+        <span class="eyebrow">Profile</span>
+        <h1 id="h-about-title">About Me</h1>
+        <p class="lede">Add your background, certifications, and what draws you to Salesforce administration here.</p>
+        <div class="callout">This section is a placeholder — replace with your own bio, certifications (e.g. Salesforce
+          Administrator), and contact links.</div>
+      </section>
+
+    </main>
+
+    <!-- ============ RIGHT SIDEBAR — TOC ============ -->
+    <aside class="toc" id="toc" aria-label="On this page">
+      <div class="toc-label">On This Page</div>
+      <div class="toc-list" id="tocList"></div>
+      <div class="toc-card" id="tocReadiness">
+        <h4>Quick Stats</h4>
+        <div class="small" style="font-weight: 700;">Admin Skill Score: 71%</div>
+      </div>
+    </aside>
+
   </div>
-  <div class="topbar-right">
-    <div class="readiness-pill"><span class="readiness-dot"></span><span class="rp-text">Job Readiness 64%</span></div>
-  </div>
-</header>
 
-<div class="overlay" id="overlay"></div>
-
-<div class="shell">
-
-  <!-- ============ LEFT SIDEBAR ============ -->
-  <nav class="sidebar" id="sidebar" aria-label="Primary">
-    <div class="navgroup">
-      <a class="navlink active" data-section="home" href="#home">Home</a>
-    </div>
-    <div class="navgroup">
-      <a class="navlink" data-section="learning-journey" href="#learning-journey">Learning Journey</a>
-    </div>
-
-    <div class="sidebar-section-label">Case Studies</div>
-    <div class="navgroup">
-      <a class="navlink navgroup-toggle open" data-toggle="projects-sub" href="#projects">Salesforce Admin Case Studies <span class="count">14</span></a>
-      <div class="subnav open" id="projects-sub">
-        <a class="navlink" data-section="projects" data-filter="all" href="#projects">All Case Studies</a>
-        <a class="navlink" data-section="projects" data-filter="M1-M3" href="#projects">Setup &amp; Data Model</a>
-        <a class="navlink" data-section="projects" data-filter="M4-M5" href="#projects">Security &amp; Migration</a>
-        <a class="navlink" data-section="projects" data-filter="M6-M7" href="#projects">Flows &amp; Automation</a>
-        <a class="navlink" data-section="projects" data-filter="M8-M10" href="#projects">Analytics &amp; Services</a>
-        <a class="navlink" data-section="projects" data-filter="M11-M14" href="#projects">Data Audit &amp; Deploy</a>
-      </div>
-    </div>
-
-    <div class="sidebar-section-label">Preparation</div>
-    <div class="navgroup">
-      <a class="navlink" data-section="interview-prep" href="#interview-prep">Interview Preparation</a>
-    </div>
-
-    <div class="sidebar-section-label">Evidence</div>
-    <div class="navgroup">
-      <a class="navlink navgroup-toggle open" data-toggle="evidence-sub" href="#portfolio-evidence">Portfolio Evidence</a>
-      <div class="subnav open" id="evidence-sub">
-        <a class="navlink" data-section="portfolio-evidence" data-tab="screenshots" href="#portfolio-evidence">Screenshots</a>
-        <a class="navlink" data-section="portfolio-evidence" data-tab="documentation" href="#portfolio-evidence">Documentation</a>
-      </div>
-    </div>
-
-    <div class="sidebar-section-label">Profile</div>
-    <div class="navgroup">
-      <a class="navlink" data-section="about" href="#about">About Me</a>
-    </div>
-  </nav>
-
-  <!-- ============ MAIN CONTENT ============ -->
-  <main class="main" id="main-content">
-
-    <!-- ===== HOME ===== -->
-    <section class="section active" id="sec-home" data-section="home">
-      <div class="breadcrumb"><span class="current">Home</span></div>
-      <span class="eyebrow">Salesforce Admin Documentation Portal</span>
-      <h1 id="h-home-title">Building admin judgment, one business problem at a time.</h1>
-      <p class="lede">This is a living record of how I think through access models, automation, and data architecture as a Salesforce Administrator — every case study documents the problem, the decision, and the reasoning behind it.</p>
-
-      <div class="stat-grid">
-        <div class="stat-card">
-          <div class="stat-value">7<span style="font-size:16px;color:var(--th-muted);">/14</span></div>
-          <div class="stat-label">Modules Completed</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">34</div>
-          <div class="stat-label">Features Learned</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">71<span style="font-size:16px;color:var(--th-muted);">%</span></div>
-          <div class="stat-label">Admin Skill Score</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">64<span style="font-size:16px;color:var(--th-muted);">%</span></div>
-          <div class="stat-label">Job Readiness Score</div>
-        </div>
-      </div>
-
-      <h2 id="h-home-continue">Continue the Journey</h2>
-      <div class="trail">
-        <div class="trail-step done">
-          <div class="trail-dot">✓</div>
-          <div class="trail-step-title">M1 · Org Setup</div>
-        </div>
-        <div class="trail-step done">
-          <div class="trail-dot">✓</div>
-          <div class="trail-step-title">M2 · Security Models</div>
-        </div>
-        <div class="trail-step active">
-          <div class="trail-dot">3</div>
-          <div class="trail-step-title">M3 · Flows &amp; Automation</div>
-        </div>
-        <div class="trail-step">
-          <div class="trail-dot">4</div>
-          <div class="trail-step-title">M4 · Reports &amp; Dashboards</div>
-        </div>
-      </div>
-
-      <h2 id="h-home-featured">Featured Case Study</h2>
-      <div class="project-grid" style="grid-template-columns:1fr;" id="featuredProjectContainer">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-    </section>
-
-    <!-- ===== LEARNING JOURNEY ===== -->
-    <section class="section" id="sec-learning-journey" data-section="learning-journey">
-      <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span class="current">Learning Journey</span></div>
-      <span class="eyebrow">Progress Dashboard</span>
-      <h1 id="h-lj-title">Learning Journey</h1>
-      <p class="lede">A running tally of what's been built, what it maps to on Trailhead, and how ready this portfolio is for a real admin role.</p>
-
-      <h2 id="h-lj-scores">Readiness Scores</h2>
-      <div class="stat-grid">
-        <div class="stat-card"><div class="stat-value">71%</div><div class="stat-label">Portfolio Readiness</div></div>
-        <div class="stat-card"><div class="stat-value">64%</div><div class="stat-label">Job Readiness</div></div>
-        <div class="stat-card"><div class="stat-value">58%</div><div class="stat-label">Interview Readiness</div></div>
-        <div class="stat-card"><div class="stat-value">34</div><div class="stat-label">Trailhead-Equivalent Skills</div></div>
-      </div>
-
-      <h2 id="h-lj-skills">Skills Learned by Category</h2>
-      <table>
-        <thead><tr><th>Category</th><th>Skills</th><th>Projects Applied</th></tr></thead>
-        <tbody>
-          <tr><td>Security &amp; Access</td><td>Profiles, Roles, OWD, Permission Sets, Sharing Rules</td><td>4</td></tr>
-          <tr><td>Automation</td><td>Flow (Record-Triggered, Screen Flow), Validation Rules</td><td>2</td></tr>
-          <tr><td>Data Management</td><td>Data Loader, Duplicate Rules, Matching Rules</td><td>1</td></tr>
-          <tr><td>Reports &amp; Dashboards</td><td>Report Types, Dashboard Filters, Dynamic Dashboards</td><td>0</td></tr>
-        </tbody>
-      </table>
-
-      <h2 id="h-lj-log">Project Completion Log</h2>
-      <div class="callout success">
-        <span class="callout-title">7 of 14 projects completed</span>
-        Average time to complete a Security Model project: 5.5 hours. Next milestone: finish M3 (Automation with Flow) to unlock the Reports &amp; Dashboards module.
-      </div>
-    </section>
-
-    <!-- ===== PROJECTS ===== -->
-    <section class="section" id="sec-projects" data-section="projects">
-      <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span class="current">Case Studies</span></div>
-      <span class="eyebrow">Module Library</span>
-      <h1 id="h-proj-title">Salesforce Admin Case Studies</h1>
-      <p class="lede">A running curriculum of 14 real-world business case studies, representing hands-on implementation problem solving.</p>
-
-      <h2 id="h-proj-list">All Case Studies</h2>
-      <div class="project-grid" id="projectGrid">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-    </section>
-
-    <!-- ===== PROJECT DETAIL (template) ===== -->
-    <section class="section" id="sec-project-detail" data-section="project-detail">
-      <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><a href="#projects" data-section="projects">Case Studies</a><span class="sep">/</span><span class="current">Detail View</span></div>
-      <span class="eyebrow" id="pd-eyebrow">Module M2 · Security Models</span>
-      <h1 id="h-pd-title">PropNest Realty — User Access Gone Wrong</h1>
-      <p class="lede" id="pd-lede">Industry: Real Estate &nbsp;·&nbsp; Company size: 80 users &nbsp;·&nbsp; Status: <strong style="color:var(--th-green)">Completed</strong></p>
-
-      <div class="tabs">
-        <div class="tab active" data-tab-target="pd-overview">Overview</div>
-        <div class="tab" data-tab-target="pd-design">Solution Design</div>
-        <div class="tab" data-tab-target="pd-decisions">Why I Chose This Solution</div>
-        <div class="tab" data-tab-target="pd-implementation">Implementation</div>
-        <div class="tab" data-tab-target="pd-testing">Testing &amp; Screenshots</div>
-        <div class="tab" data-tab-target="pd-resume">Resume &amp; Interview</div>
-      </div>
-
-      <div class="tabpanel active" id="pd-overview">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-
-      <div class="tabpanel" id="pd-design">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-
-      <div class="tabpanel" id="pd-decisions">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-
-      <div class="tabpanel" id="pd-implementation">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-
-      <div class="tabpanel" id="pd-testing">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-
-      <div class="tabpanel" id="pd-resume">
-        <!-- Rendered dynamically by app.js -->
-      </div>
-    </section>
-
-    <!-- ===== INTERVIEW PREP ===== -->
-    <section class="section" id="sec-interview-prep" data-section="interview-prep">
-      <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span class="current">Interview Preparation</span></div>
-      <span class="eyebrow">Practice Bank</span>
-      <h1 id="h-ip-title">Interview Preparation</h1>
-      <p class="lede">Every completed project contributes questions here, grouped by topic, so practice stays tied to real decisions made — not generic flashcards.</p>
-
-      <h2 id="h-ip-security">Security &amp; Access</h2>
-      <ul>
-        <li>How do you decide between Org-Wide Defaults of Private vs. Public Read Only?</li>
-        <li>What's the difference between a Role Hierarchy and a Sharing Rule, and when would you need both?</li>
-      </ul>
-      <h2 id="h-ip-automation">Automation</h2>
-      <ul>
-        <li>When would you choose a Screen Flow over a Record-Triggered Flow?</li>
-      </ul>
-    </section>
-
-    <!-- ===== PORTFOLIO EVIDENCE ===== -->
-    <section class="section" id="sec-portfolio-evidence" data-section="portfolio-evidence">
-      <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span class="current">Portfolio Evidence</span></div>
-      <span class="eyebrow">Proof of Work</span>
-      <h1 id="h-pe-title">Portfolio Evidence</h1>
-      <p class="lede">Screenshots and supporting documentation that back up every claim made in the project write-ups.</p>
-
-      <h2 id="h-pe-screens">Screenshots</h2>
-      <div class="callout">No screenshots uploaded yet. Each project's testing tab lists exactly which screenshots to capture.</div>
-
-      <h2 id="h-pe-docs">Documentation</h2>
-      <div class="callout">Architecture diagrams and decision logs will appear here as projects are completed.</div>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section class="section" id="sec-about" data-section="about">
-      <div class="breadcrumb"><a href="#home" data-section="home">Home</a><span class="sep">/</span><span class="current">About Me</span></div>
-      <span class="eyebrow">Profile</span>
-      <h1 id="h-about-title">About Me</h1>
-      <p class="lede">Add your background, certifications, and what draws you to Salesforce administration here.</p>
-      <div class="callout">This section is a placeholder — replace with your own bio, certifications (e.g. Salesforce Administrator), and contact links.</div>
-    </section>
-
-  </main>
-
-  <!-- ============ RIGHT SIDEBAR — TOC ============ -->
-  <aside class="toc" id="toc" aria-label="On this page">
-    <div class="toc-label">On This Page</div>
-    <div class="toc-list" id="tocList"></div>
-    <div class="toc-card" id="tocReadiness">
-      <h4>Quick Stats</h4>
-      <div class="small" style="font-weight: 700;">Admin Skill Score: 71%</div>
-    </div>
-  </aside>
-
-</div>
-
-<script src="projects-data.js"></script>
-<script src="app.js"></script>
+  <script src="projects-data.js?v=1.0.1"></script>
+  <script src="app.js?v=1.0.1"></script>
 </body>
+
 </html>

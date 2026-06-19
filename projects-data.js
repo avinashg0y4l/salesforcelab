@@ -71,73 +71,150 @@ const CASE_STUDIES = [
     points: "3,000 pts",
     status: "completed",
     filterCategory: "M1-M3",
-    tags: ["Setup", "Lightning Experience", "Org Config"],
-    topics: ["Setup", "Lightning Experience", "Org Configuration", "Documentation"],
+    tags: ["Setup", "Lightning Experience", "Org Config", "Custom Objects", "Reports & Dashboards"],
+    topics: ["Setup", "Lightning Experience", "Org Configuration", "Standard Objects", "Custom Objects", "Data Import Wizard", "Reports & Dashboards"],
     businessProblem: "ClearPath Learning sells online courses to colleges. They currently track everything in Excel sheets. The CEO has purchased Salesforce Essentials and wants it live in 2 weeks. There is no CRM history, no org structure, and no documentation.",
-    objective: "Set up a brand-new Developer Org, configure the company information, understand what edition they need, and document what Salesforce can and cannot do for them.",
+    objective: "Implement a Salesforce CRM system that can manage colleges, contacts, track course sales, follow-up activities, and provide reports and dashboards.",
     constraints: [
-      "Budget: no paid add-ons",
-      "Team: non-technical users only",
+      "No CRM history, no org structure, and no documentation",
       "Timeline: 2 weeks to go live",
-      "Data: 800 existing student contacts in Excel"
+      "Staff unfamiliar with CRM systems (requires simplified user experience)"
     ],
     whatYouWillBuild: [
-      "Company information configured (Bangalore timezone, INR currency)",
-      "App navigation customized for EdTech (Accounts, Contacts, Leads, Courses)",
-      "Complete Admin Beginner trailhead trail",
-      "1-page brief: What Salesforce is and what it will replace"
+      "Salesforce Developer Edition Org",
+      "Company Information configured according to operational requirements",
+      "Custom Sales App navigation including Home, Accounts, Contacts, Opportunities, Tasks, Reports, Dashboards",
+      "Sample records for Account, Contact, Opportunity, and Task objects",
+      "Imported customer records from CSV files using the Data Import Wizard",
+      "Custom Object 'Course' with loaded course records",
+      "All Colleges report and ClearPath Overview dashboard"
     ],
     screenshots: [
-      { url: "images/clearpath_company_info.png", caption: "Company Information Setting" },
-      { url: "images/clearpath_app_launcher.png", caption: "EdTech Custom App Navigation Bar" }
+      { url: "images/clearpath_learning/image01.png", caption: "Screenshot 1: Salesforce Home Page" },
+      { url: "images/clearpath_learning/image02.png", caption: "Screenshot 2: Company Information Page" },
+      { url: "images/clearpath_learning/image03.png", caption: "Screenshot 3: Object Manager Overview" },
+      { url: "images/clearpath_learning/image04.png", caption: "Screenshot 4: Sales App Navigation Config" },
+      { url: "images/clearpath_learning/image05.png", caption: "Screenshot 5: Account Record (ABC Engineering College)" },
+      { url: "images/clearpath_learning/image06.png", caption: "Screenshot 6: Contact Record (Rahul Sharma)" },
+      { url: "images/clearpath_learning/image07.png", caption: "Screenshot 7: Opportunity Record (AI Certification Program)" },
+      { url: "images/clearpath_learning/image08.png", caption: "Screenshot 8: Task Record (Follow Up activity)" },
+      { url: "images/clearpath_learning/image09.png", caption: "Screenshot 9: Data Import Wizard Setup" },
+      { url: "images/clearpath_learning/image10.png", caption: "Screenshot 10: Imported Accounts and Contacts" },
+      { url: "images/clearpath_learning/image11.png", caption: "Screenshot 11: Course Custom Object Configuration" },
+      { url: "images/clearpath_learning/image12.png", caption: "Screenshot 12: Course Records" },
+      { url: "images/clearpath_learning/image13.png", caption: "Screenshot 13: Accounts Report (All Colleges)" },
+      { url: "images/clearpath_learning/image14.png", caption: "Screenshot 14: ClearPath Overview Dashboard" }
     ],
     solutionDesign: {
-      architectureOverview: "Initial single-org setup utilizing standard Salesforce Lightning architecture. Configured Bangalore (Asia/Kolkata) locale, Indian Rupee (INR) currency, and standard business hours (9:00 AM - 6:00 PM). Apps customized via App Manager to display clean navigation tabs relevant to student and university records.",
-      tableHeader: ["Setting", "Configuration Value"],
+      architectureOverview: "Single-org setup utilizing standard Salesforce Lightning architecture and standard objects (Accounts for Colleges, Contacts for Students, Opportunities for Course Sales, Tasks for Follow-ups, Leads for Potential Customers). Created a custom data model with a custom object 'Course' for centralized course management, avoiding duplicate information. Configured organization parameters, imported client contact data, and built customized reporting dashboards.",
+      tableHeader: ["Business Need", "Salesforce Feature / Object"],
       tableRows: [
-        ["Locale / Timezone", "English (India) / Asia/Kolkata"],
-        ["Default Currency", "INR - Indian Rupee"],
-        ["Business Hours", "Monday to Friday, 9 AM to 6 PM IST"],
-        ["App Package", "Custom App Launcher: ClearPath EdTech Console"],
-        ["Core Objects Displayed", "Accounts, Contacts, Leads, Reports, Dashboards"]
+        ["College Management", "Account Object"],
+        ["Student Tracking", "Contact Object"],
+        ["Course Sales", "Opportunity Object"],
+        ["Follow-Up Activity", "Task Object"],
+        ["Course Management", "Course Custom Object"],
+        ["Data Migration", "Data Import Wizard"],
+        ["Analytics", "Reports & Dashboards"]
       ]
     },
     decisions: [
       {
-        title: "Standard vs Custom App Launcher Config",
-        text: "I customized the navigation panel to display only EdTech essentials (Accounts and Contacts renamed to Universities and Student Contacts) to prevent non-technical staff from being overwhelmed by Sales-specific terminology."
+        title: "Salesforce Essentials Edition Recommendation",
+        text: "Recommended Salesforce Essentials for ClearPath Learning because it fits a 25-person online education startup's basic CRM requirements and budget constraints, allowing them to scale affordably."
       },
       {
-        title: "Developer Edition for Initial Sandbox Testing",
-        text: "I provisioned a free Developer Org for initial configuration. This provides access to Enterprise features for testing configurations without utilizing the paid Essentials licenses during the build phase."
+        title: "Custom Object 'Course' Creation",
+        text: "Standard Salesforce objects do not store course information separately. Created a custom object 'Course' to provide centralized course management and avoid duplicate course information across opportunities."
       }
     ],
     implementationSteps: [
-      "Create a fresh Developer Org at developer.salesforce.com.",
-      "Navigate to Company Information; configure organization name, default timezone (IST), and base currency (INR).",
-      "Set Business Hours and Fiscal Year settings matching the Indian standard April-March calendar.",
-      "Create a Custom Lightning App named 'ClearPath EdTech' and assign to System Administrator and standard profiles.",
-      "Import student names and contact details using the Data Import Wizard to test basic lookup layout."
+      {
+        text: "Create a Salesforce Developer Edition Org and log into Lightning Experience.",
+        screenshots: [
+          { url: "images/clearpath_learning/image01.png", caption: "Screenshot 1: Salesforce Home Page" }
+        ]
+      },
+      {
+        text: "Navigate to Setup → Company Information to configure organization settings.",
+        screenshots: [
+          { url: "images/clearpath_learning/image02.png", caption: "Screenshot 2: Company Information Page" }
+        ]
+      },
+      {
+        text: "Analyze standard objects (Account, Contact, Opportunity, Task, Lead) in Object Manager.",
+        screenshots: [
+          { url: "images/clearpath_learning/image03.png", caption: "Screenshot 3: Object Manager Overview" }
+        ]
+      },
+      {
+        text: "Customize the Sales App navigation bar to display only required objects (Home, Accounts, Contacts, Opportunities, Tasks, Reports, Dashboards).",
+        screenshots: [
+          { url: "images/clearpath_learning/image04.png", caption: "Screenshot 4: Sales App Navigation Config" }
+        ]
+      },
+      {
+        text: "Create sample data including ABC Engineering College (Account), Rahul Sharma (Contact), AI Certification Program (Opportunity), and Follow Up task.",
+        screenshots: [
+          { url: "images/clearpath_learning/image05.png", caption: "Screenshot 5: Account Record (ABC Engineering College)" },
+          { url: "images/clearpath_learning/image06.png", caption: "Screenshot 6: Contact Record (Rahul Sharma)" },
+          { url: "images/clearpath_learning/image07.png", caption: "Screenshot 7: Opportunity Record (AI Certification Program)" },
+          { url: "images/clearpath_learning/image08.png", caption: "Screenshot 8: Task Record (Follow Up activity)" }
+        ]
+      },
+      {
+        text: "Migrate Excel contact list into Salesforce using the Data Import Wizard.",
+        screenshots: [
+          { url: "images/clearpath_learning/image09.png", caption: "Screenshot 9: Data Import Wizard Setup" },
+          { url: "images/clearpath_learning/image10.png", caption: "Screenshot 10: Imported Accounts and Contacts" }
+        ]
+      },
+      {
+        text: "Create a custom object named 'Course' and load course records (Data Science, AI Certification, Cyber Security, Cloud Computing).",
+        screenshots: [
+          { url: "images/clearpath_learning/image11.png", caption: "Screenshot 11: Course Custom Object Configuration" }
+        ]
+      },
+      {
+        text: "Create course records within the custom Course object to enable reusable course relationships across opportunities.",
+        screenshots: [
+          { url: "images/clearpath_learning/image12.png", caption: "Screenshot 12: Course Records" }
+        ]
+      },
+      {
+        text: "Create an 'All Colleges' Accounts report and a 'ClearPath Overview' dashboard for management visibility.",
+        screenshots: [
+          { url: "images/clearpath_learning/image13.png", caption: "Screenshot 13: Accounts Report (All Colleges)" },
+          { url: "images/clearpath_learning/image14.png", caption: "Screenshot 14: ClearPath Overview Dashboard" }
+        ]
+      }
     ],
     testingMatrix: {
       tableHeader: ["Test Case", "Steps to Validate", "Expected Result"],
       tableRows: [
-        ["Timezone Verification", "Create a task record and check creation timestamp", "Timestamp displays in Indian Standard Time (IST)"],
-        ["App Access", "Log in as Standard User and access App Launcher", "Only 'ClearPath EdTech' app is visible, with 5 streamlined tabs"]
+        ["Data Import Validation", "Check Accounts and Contacts after running Data Import Wizard", "Sample Account and Contact records are loaded cleanly"],
+        ["Custom Object Reuse", "Create a Course record and check if it can be referenced", "Courses can be managed centrally and reused across deals"],
+        ["Report Visibility", "Open the 'All Colleges' report", "Lists all customer institutions accurately"],
+        ["Dashboard Rendering", "Open 'ClearPath Overview' Dashboard", "Displays management charts representing CRM data metrics"]
       ],
       checklist: [
-        "Verify Bangalore default locale in Company Profile",
-        "Verify Business Hours are active",
-        "Verify 800 student contacts loaded cleanly without errors"
+        "Verify Developer Org access",
+        "Verify Company Name, Timezone, and Currency settings",
+        "Verify custom Sales App navigation items",
+        "Confirm Course custom object exists and is accessible",
+        "Confirm 'All Colleges' report runs without errors"
       ]
     },
     resumeImpact: [
-      "Configured a greenfield Salesforce Org for a growing EdTech startup, establishing locale, business hours, and multi-currency configurations.",
-      "Customized Salesforce App navigation layouts, improving onboarding speed for non-technical users by 35%."
+      "Configured a greenfield Salesforce Org for a growing EdTech startup, establishing locale, business hours, and standard object mapping.",
+      "Designed and configured a custom data model containing a custom 'Course' object to centralize and reuse product records.",
+      "Executed end-to-end data migration of customer contacts from spreadsheets using the Data Import Wizard.",
+      "Built executive reporting dashboards to track customer accounts, opportunities, and activities in real-time."
     ],
     interviewQuestions: [
-      "How do you change the default currency of a Salesforce org, and what are the implications of enabling multi-currency?",
-      "When setting up a new org, what is the difference between standard and custom fiscal years, and can a custom fiscal year be disabled?"
+      "Why is it recommended to use a custom object for courses instead of text fields or standard products in this scenario?",
+      "What are the limitations of the Data Import Wizard compared to Data Loader, and why was it appropriate for this import?",
+      "How does recommending Salesforce Essentials align with the operational and budget constraints of a 25-person startup?"
     ]
   },
   {
