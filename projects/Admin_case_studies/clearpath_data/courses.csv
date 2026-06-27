@@ -1,0 +1,16 @@
+Course_Name__c,Duration__c,Fee__c,Certification_Type__c,Category__c,Status__c
+Data Science,6 Months,49999,Professional Certificate,Technology,Active
+AI Certification,4 Months,39999,Professional Certificate,Artificial Intelligence,Active
+Cyber Security,3 Months,29999,Professional Certificate,Security,Active
+Cloud Computing,4 Months,34999,Professional Certificate,Cloud Infrastructure,Active
+Full Stack Development,5 Months,44999,Professional Certificate,Web Development,Active
+Digital Marketing,3 Months,24999,Professional Certificate,Marketing,Active
+Data Analytics with Python,2 Months,19999,Short Course,Data Science,Active
+Machine Learning Fundamentals,3 Months,29999,Professional Certificate,Artificial Intelligence,Active
+Business Analytics,4 Months,34999,Professional Certificate,Business,Active
+UI/UX Design,3 Months,24999,Professional Certificate,Design,Active
+DevOps Engineering,4 Months,39999,Professional Certificate,Technology,Active
+Blockchain Fundamentals,3 Months,29999,Professional Certificate,Emerging Tech,Active
+Mobile App Development,4 Months,34999,Professional Certificate,Mobile Development,Active
+Cloud Security,3 Months,29999,Professional Certificate,Security,Active
+AI for Business Leaders,2 Months,19999,Executive Program,Business,Active

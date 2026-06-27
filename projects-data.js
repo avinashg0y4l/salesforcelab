@@ -154,7 +154,11 @@ const CASE_STUDIES = [
         ]
       },
       {
-        text: "Create sample data including ABC Engineering College (Account), Rahul Sharma (Contact), AI Certification Program (Opportunity), and Follow Up task.",
+        text: 'Download the sample dataset CSVs: <a href="projects/Admin_case_studies/clearpath_data/accounts.csv" download>accounts.csv</a> (25 colleges), <a href="projects/Admin_case_studies/clearpath_data/contacts.csv" download>contacts.csv</a> (30 contacts), <a href="projects/Admin_case_studies/clearpath_data/courses.csv" download>courses.csv</a> (15 courses), <a href="projects/Admin_case_studies/clearpath_data/opportunities.csv" download>opportunities.csv</a> (25 opportunities). Use these CSVs for the data import steps below.',
+        screenshots: []
+      },
+      {
+        text: 'Create sample data including ABC Engineering College (Account), Rahul Sharma (Contact), AI Certification Program (Opportunity), and Follow Up task. Bulk college data available in <a href="projects/Admin_case_studies/clearpath_data/accounts.csv" download>accounts.csv</a>.',
         screenshots: [
           { url: "images/clearpath_learning/image05.png", caption: "Screenshot 5: Account Record (ABC Engineering College)" },
           { url: "images/clearpath_learning/image06.png", caption: "Screenshot 6: Contact Record (Rahul Sharma)" },
@@ -163,23 +167,27 @@ const CASE_STUDIES = [
         ]
       },
       {
-        text: "Migrate Excel contact list into Salesforce using the Data Import Wizard.",
+        text: 'Migrate Excel contact list into Salesforce using the Data Import Wizard. Use <a href="projects/Admin_case_studies/clearpath_data/contacts.csv" download>contacts.csv</a> as the import source.',
         screenshots: [
           { url: "images/clearpath_learning/image09.png", caption: "Screenshot 9: Data Import Wizard Setup" },
           { url: "images/clearpath_learning/image10.png", caption: "Screenshot 10: Imported Accounts and Contacts" }
         ]
       },
       {
-        text: "Create a custom object named 'Course' and load course records (Data Science, AI Certification, Cyber Security, Cloud Computing).",
+        text: 'Create a custom object named "Course" with fields: Course_Name__c, Duration__c, Fee__c, Certification_Type__c, Category__c, Status__c.',
         screenshots: [
           { url: "images/clearpath_learning/image11.png", caption: "Screenshot 11: Course Custom Object Configuration" }
         ]
       },
       {
-        text: "Create course records within the custom Course object to enable reusable course relationships across opportunities.",
+        text: 'Load course records into the custom Course object using <a href="projects/Admin_case_studies/clearpath_data/courses.csv" download>courses.csv</a> via the Data Import Wizard.',
         screenshots: [
           { url: "images/clearpath_learning/image12.png", caption: "Screenshot 12: Course Records" }
         ]
+      },
+      {
+        text: 'Create Opportunity records for course deals using <a href="projects/Admin_case_studies/clearpath_data/opportunities.csv" download>opportunities.csv</a>. This CSV links colleges, contacts, and courses into sales pipeline records.',
+        screenshots: []
       },
       {
         text: "Create an 'All Colleges' Accounts report and a 'ClearPath Overview' dashboard for management visibility.",

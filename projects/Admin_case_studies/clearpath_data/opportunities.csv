@@ -1,0 +1,26 @@
+Name,StageName,Amount,CloseDate,AccountId,ContactId,Course_Name__c,Type
+AI Certification Program - ABC Engineering,Prospecting,500000,2025-03-15,ABC Engineering College,Rahul Sharma,AI Certification,New Business
+Data Science Program - DIT,Negotiation,750000,2025-04-30,Delhi Institute of Technology,Amit Singh,Data Science,New Business
+Cloud Computing Bundle - Pune Uni,Prospecting,350000,2025-02-28,Pune University Campus,Vikram Joshi,Cloud Computing,Upsell
+Cyber Security Lab - St. Xavier's,Closed Won,450000,2025-01-20,St. Xavier's College Mumbai,Rajesh Kumar,Cyber Security,New Business
+Full Stack Program - BBS,Prospecting,600000,2025-05-15,Bangalore Business School,Arun Nair,Full Stack Development,New Business
+Data Analytics Suite - MCC,Negotiation,400000,2025-03-31,Madras Christian College,Karthik Murugan,Data Analytics with Python,New Business
+AI Lab Setup - Amity Noida,Closed Won,1200000,2025-01-10,Amity University Noida,Manish Agarwal,AI Certification,New Business
+Machine Learning Program - Christ Univ,Prospecting,550000,2025-06-30,Christ University Bangalore,Ravi Krishnan,Machine Learning Fundamentals,New Business
+Business Analytics - SRM,Prospecting,380000,2025-04-15,SRM Institute of Technology,Vijay Chauhan,Business Analytics,New Business
+Digital Marketing Bundle - Loyola,Closed Won,250000,2025-02-10,Loyola College Hyderabad,Suresh Babu,Digital Marketing,New Business
+DevOps Pipeline - KIIT,Negotiation,650000,2025-03-20,KIIT University Bhubaneswar,Dilip Kumar,DevOps Engineering,New Business
+UI/UX Design - Manipal,Prospecting,300000,2025-07-15,Manipal Academy of Higher Education,Naveen Hegde,UI/UX Design,New Business
+Cloud Security - VIT,Closed Won,500000,2025-01-25,Vellore Institute of Technology,Ganesh Raman,Cloud Security,New Business
+Mobile App Dev - Calcutta Univ,Negotiation,350000,2025-04-30,University of Calcutta,Subhash Bose,Mobile App Development,New Business
+Blockchain Intro - Gujarat Univ,Prospecting,280000,2025-06-15,Gujarat University Ahmedabad,Umesh Shah,Blockchain Fundamentals,New Business
+Data Science Program - Jamia,Prospecting,720000,2025-05-30,Jamia Millia Islamia Delhi,Vikram Joshi,Data Science,New Business
+AI Certification - BITS Pilani,Closed Won,850000,2025-02-28,BITS Pilani,Vijay Chauhan,AI Certification,New Business
+Cloud Computing - Thapar Inst,Negotiation,400000,2025-03-25,Thapar Institute Patiala,Manish Agarwal,Cloud Computing,New Business
+Full Stack - Anna University,Prospecting,580000,2025-08-15,Anna University Chennai,Karthik Murugan,Full Stack Development,New Business
+Business Analytics - Univ Mumbai,Negotiation,320000,2025-04-20,University of Mumbai,Rajesh Kumar,Business Analytics,New Business
+Cyber Security - Jadavpur Univ,Closed Won,480000,2025-01-30,Jadavpur University Kolkata,Subhash Bose,Cyber Security,New Business
+Machine Learning - NIT Trichy,Prospecting,600000,2025-07-20,National Institute of Technology Trichy,Ganesh Raman,Machine Learning Fundamentals,New Business
+Digital Marketing - Symbiosis,Negotiation,220000,2025-03-10,Symbiosis International University,Arun Nair,Digital Marketing,New Business
+Data Science - Univ Hyderabad,Prospecting,680000,2025-06-01,University of Hyderabad,Suresh Babu,Data Science,New Business
+AI for Business - IIT Kharagpur,Negotiation,950000,2025-04-05,IIT Kharagpur,Dilip Kumar,AI for Business Leaders,New Business

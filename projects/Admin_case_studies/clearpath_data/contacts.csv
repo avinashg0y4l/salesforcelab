@@ -1,0 +1,31 @@
+FirstName,LastName,Email,Phone,MailingStreet,MailingCity,MailingState,MailingCountry,MailingPostalCode,AccountId,Title,Department
+Rahul,Sharma,rahul.sharma@abcengg.edu,9876543210,123 Andheri East,Mumbai,Maharashtra,India,400093,ABC Engineering College,Department Head,Computer Science
+Priya,Patel,priya.patel@abcengg.edu,9876543211,123 Andheri East,Mumbai,Maharashtra,India,400093,ABC Engineering College,Professor,Electronics
+Amit,Singh,amit.singh@dit.edu,9876543212,456 Rohini,Delhi,Delhi,India,110089,Delhi Institute of Technology,Registrar,Administration
+Neha,Gupta,neha.gupta@dit.edu,9876543213,456 Rohini,Delhi,Delhi,India,110089,Delhi Institute of Technology,Faculty Coordinator,Information Technology
+Vikram,Joshi,vikram.joshi@puneuni.ac.in,9876543214,Ganeshkhind,Pune,Maharashtra,India,411007,Pune University Campus,Dean,Science
+Anjali,Deshmukh,anjali.deshmukh@puneuni.ac.in,9876543215,Ganeshkhind,Pune,Maharashtra,India,411007,Pune University Campus,Professor,Mathematics
+Rajesh,Kumar,rajesh.kumar@xaviers.edu,9876543216,5 Mahapalika Marg,Mumbai,Maharashtra,India,400001,St. Xavier's College Mumbai,Principal,Administration
+Sneha,Rao,sneha.rao@xaviers.edu,9876543217,5 Mahapalika Marg,Mumbai,Maharashtra,India,400001,St. Xavier's College Mumbai,HOD,Commerce
+Arun,Nair,arun.nair@bbs.edu.in,9876543218,OPR Road,Bangalore,Karnataka,India,560068,Bangalore Business School,Director,Management Studies
+Deepa,Iyer,deepa.iyer@bbs.edu.in,9876543219,OPR Road,Bangalore,Karnataka,India,560068,Bangalore Business School,Admissions Officer,Administration
+Karthik,Murugan,karthik.murugan@mcc.edu.in,9876543220,Tambaram,Chennai,Tamil Nadu,India,600059,Madras Christian College,Professor,Physics
+Lakshmi,Narayanan,lakshmi.narayanan@mcc.edu.in,9876543221,Tambaram,Chennai,Tamil Nadu,India,600059,Madras Christian College,Department Head,Chemistry
+Manish,Agarwal,manish.agarwal@amity.edu,9876543222,Sector 125,Noida,Uttar Pradesh,India,201303,Amity University Noida,Vice Chancellor,Administration
+Pooja,Mehta,pooja.mehta@amity.edu,9876543223,Sector 125,Noida,Uttar Pradesh,India,201303,Amity University Noida,Coordinator,Student Affairs
+Ravi,Krishnan,ravi.krishnan@christuniversity.in,9876543224,Hosur Road,Bangalore,Karnataka,India,560029,Christ University Bangalore,Dean,Engineering
+Sunita,Reddy,sunita.reddy@christuniversity.in,9876543225,Hosur Road,Bangalore,Karnataka,India,560029,Christ University Bangalore,Professor,Computer Applications
+Vijay,Chauhan,vijay.chauhan@srmist.edu.in,9876543226,Kattankulathur,Chennai,Tamil Nadu,India,603203,SRM Institute of Technology,Registrar,Administration
+Kavita,Sharma,kavita.sharma@srmist.edu.in,9876543227,Kattankulathur,Chennai,Tamil Nadu,India,603203,SRM Institute of Technology,HOD,Information Technology
+Suresh,Babu,suresh.babu@loyolacollege.edu,9876543228,Somajiguda,Hyderabad,Telangana,India,500082,Loyola College Hyderabad,Principal,Administration
+Radhika,Varma,radhika.varma@loyolacollege.edu,9876543229,Somajiguda,Hyderabad,Telangana,India,500082,Loyola College Hyderabad,Head,Commerce
+Dilip,Kumar,dilip.kumar@kiit.ac.in,9876543230,Patia,Bhubaneswar,Odisha,India,751024,KIIT University Bhubaneswar,Director,Academic Affairs
+Sushmita,Das,sushmita.das@kiit.ac.in,9876543231,Patia,Bhubaneswar,Odisha,India,751024,KIIT University Bhubaneswar,Professor,Computer Science
+Naveen,Hegde,naveen.hegde@manipal.edu,9876543232,Madhav Nagar,Manipal,Karnataka,India,576104,Manipal Academy of Higher Education,Dean,Health Sciences
+Asha,Shenoy,asha.shenoy@manipal.edu,9876543233,Madhav Nagar,Manipal,Karnataka,India,576104,Manipal Academy of Higher Education,Coordinator,Online Learning
+Ganesh,Raman,ganesh.raman@vit.ac.in,9876543234,Vellore Campus,Vellore,Tamil Nadu,India,632014,Vellore Institute of Technology,Professor,Electronics
+Meera,Krishnan,meera.krishnan@vit.ac.in,9876543235,Vellore Campus,Vellore,Tamil Nadu,India,632014,Vellore Institute of Technology,HOD,Computer Science
+Subhash,Bose,subhash.bose@caluniv.ac.in,9876543236,College Street,Kolkata,West Bengal,India,700073,University of Calcutta,Vice Chancellor,Administration
+Tanya,Banerjee,tanya.banerjee@caluniv.ac.in,9876543237,College Street,Kolkata,West Bengal,India,700073,University of Calcutta,Professor,Physics
+Umesh,Shah,umesh.shah@gujaratuniversity.ac.in,9876543238,Navrangpura,Ahmedabad,Gujarat,India,380009,Gujarat University Ahmedabad,Registrar,Administration
+Varsha,Patel,varsha.patel@gujaratuniversity.ac.in,9876543239,Navrangpura,Ahmedabad,Gujarat,India,380009,Gujarat University Ahmedabad,Dean,Science

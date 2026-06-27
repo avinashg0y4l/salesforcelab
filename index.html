@@ -39,12 +39,20 @@
   <!-- ============ TOP BAR ============ -->
   <header class="topbar">
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
-    <div class="brand"><span class="brand-mark">SL</span><span class="brand-text">Salesforce Lab</span></div>
+    <div class="brand">
+      <span class="brand-mark">
+        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Salesforce">
+          <path d="M18.1 6.1C19.9 2.4 23.8 0 28.2 0C34.4 0 39.5 5.1 39.5 11.4C39.5 11.8 39.4 12.2 39.4 12.6C42.0 13.9 43.8 16.5 43.8 19.5C43.8 23.9 40.2 27.4 35.8 27.4H9.2C4.1 27.4 0 23.3 0 18.2C0 13.6 3.2 9.7 7.5 8.7C8.2 7.1 9.7 6.1 11.4 6.1C12.4 6.1 13.3 6.4 14.0 6.9C15.1 6.4 16.6 6.1 18.1 6.1Z" fill="#00A1E0"/>
+        </svg>
+      </span>
+      <span class="brand-text">Salesforce Lab</span>
+    </div>
     <div class="topbar-search">
       <span>🔍</span>
-      <input type="text" placeholder="Search case studies, topics, features…" aria-label="Search portfolio">
+      <input type="text" placeholder="Ask Agentforce anything" aria-label="Search portfolio">
     </div>
     <div class="topbar-right">
+      <a href="https://avinashg0y4l.github.io/salesforcelab/resume" class="resume-link" target="_blank">Resume</a>
       <div class="readiness-pill"><span class="readiness-dot"></span><span class="rp-text">Job Readiness 64%</span>
       </div>
     </div>
@@ -105,6 +113,39 @@
 
       <!-- ===== HOME ===== -->
       <section class="section active" id="sec-home" data-section="home">
+
+        <!-- ── Salesforce.com–Style Hero Banner ─────────────────── -->
+        <div class="sf-hero-banner">
+          <div class="sf-hero-inner">
+            <span class="sf-hero-eyebrow">Avinash Goyal &middot; Salesforce Developer &amp; Admin</span>
+            <h1 class="sf-hero-title">Salesforce Lab &mdash; <span class="accent">Case Studies Portal.</span></h1>
+            <p class="sf-hero-sub">14 real-world Salesforce Admin implementations &mdash; from Org Setup &amp; Security to Einstein AI, Change Set deployments, and advanced Flow automations.</p>
+            <div class="sf-hero-cards">
+              <div class="sf-hero-card">
+                <span class="sf-hc-icon">&#9881;&#65039;</span>
+                <strong>Admin &amp; Config</strong>
+                <span>Org Setup, Users, Security</span>
+              </div>
+              <div class="sf-hero-card">
+                <span class="sf-hc-icon">&#128202;</span>
+                <strong>Data &amp; Analytics</strong>
+                <span>Migration, Reports, Dashboards</span>
+              </div>
+              <div class="sf-hero-card">
+                <span class="sf-hc-icon">&#9889;</span>
+                <strong>Automation</strong>
+                <span>Flows, Approvals, Validation</span>
+              </div>
+              <div class="sf-hero-card">
+                <span class="sf-hc-icon">&#129302;</span>
+                <strong>Einstein AI</strong>
+                <span>EAC &amp; Prompt Builder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ── End Hero Banner ──────────────────────────────────── -->
+
         <div class="breadcrumb"><span class="current">Home</span></div>
         <span class="eyebrow">Avinash Goyal &middot; Salesforce Portfolio</span>
         <h1 id="h-home-title">Salesforce Lab &mdash; Solving Business Problems on the CRM Platform</h1>
@@ -350,7 +391,7 @@
                   href="https://github.com/avinashg0y4l" target="_blank"
                   style="color: #fff; text-decoration: underline;">GitHub</a></span>
               <span style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 16px;">💼</span> <a
-                  href="https://linkedin.com" target="_blank"
+                  href="https://linkedin.com/in/avinashg0y4l" target="_blank"
                   style="color: #fff; text-decoration: underline;">LinkedIn</a></span>
             </div>
           </div>
@@ -584,26 +625,12 @@
             <div
               style="background: #fff; border: 1px solid var(--th-border); border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.01);">
               <h3
-                style="margin-top: 0; color: var(--th-navy); border-bottom: 2px solid var(--th-bg); padding-bottom: 8px; font-family: 'Nunito', sans-serif;">
-                Certifications</h3>
-              <ul
-                style="padding-left: 18px; margin: 10px 0 0; font-size: 13.5px; color: var(--th-text); line-height: 1.6;">
-                <li style="margin-bottom: 8px;"><strong>SAP Certified Associate</strong> (ABAP Cloud Developer)</li>
-                <li style="margin-bottom: 8px;"><strong>NVIDIA Certified</strong> - Deep Learning Fundamentals</li>
-                <li style="margin-bottom: 8px;"><strong>GitHub Professional Certificate</strong> (LinkedIn)</li>
-                <li style="margin-bottom: 8px;"><strong>Trailhead Super Badges:</strong>
-                  <div style="margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px;">
-                    <span class="badge"
-                      style="background: #f3e5f5; color: var(--th-purple); font-size: 10.5px; padding: 2px 8px; border: 1px solid #e1bee7;">Apex
-                      Specialist</span>
-                    <span class="badge"
-                      style="background: #f3e5f5; color: var(--th-purple); font-size: 10.5px; padding: 2px 8px; border: 1px solid #e1bee7;">Process
-                      Automation</span>
-                    <span class="badge"
-                      style="background: #f3e5f5; color: var(--th-purple); font-size: 10.5px; padding: 2px 8px; border: 1px solid #e1bee7;">Developer
-                      Super Set</span>
-                  </div>
-                </li>
+                style="margin-top: 0; color: var(--th-navy); border-bottom: 2px solid var(--th-bg); padding-bottom: 8px; font-family: 'Nunito', sans-serif;">Certifications &amp; Training</h3>
+              <ul style="padding-left: 18px; font-size: 14px; line-height: 1.8; margin: 12px 0 0;">
+                <li><strong>Apex Specialist</strong> Super Badge — Salesforce</li>
+                <li><strong>Process Automation Specialist</strong> Super Badge — Salesforce</li>
+                <li><strong>Developer Super Set</strong> Super Badge — Salesforce</li>
+                <li><strong>SAP ABAP Cloud</strong> Back-End Developer Trainee — BIPARD, Patna</li>
               </ul>
             </div>
 
@@ -611,22 +638,10 @@
             <div
               style="background: #fff; border: 1px solid var(--th-border); border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.01);">
               <h3
-                style="margin-top: 0; color: var(--th-navy); border-bottom: 2px solid var(--th-bg); padding-bottom: 8px; font-family: 'Nunito', sans-serif;">
-                Education</h3>
-
-              <div style="margin-bottom: 14px;">
-                <h4 style="margin: 0; font-size: 14.5px; color: var(--th-navy); font-family: 'Nunito', sans-serif;">
-                  B.Tech in Electronics &amp; Communication</h4>
-                <div style="font-size: 13px; font-weight: 700; color: var(--th-muted);">Bihar Engineering University
-                </div>
-                <div style="font-size: 12px; color: var(--th-muted);">Dec 2021 - Jun 2025</div>
-              </div>
-
-              <div>
-                <h4 style="margin: 0; font-size: 14.5px; color: var(--th-navy); font-family: 'Nunito', sans-serif;">
-                  Senior Secondary (Class XII)</h4>
-                <div style="font-size: 13px; font-weight: 700; color: var(--th-muted);">TP College (TPS), Patna</div>
-                <div style="font-size: 12px; color: var(--th-muted);">May 2019 - Mar 2020</div>
+                style="margin-top: 0; color: var(--th-navy); border-bottom: 2px solid var(--th-bg); padding-bottom: 8px; font-family: 'Nunito', sans-serif;">Education</h3>
+              <div style="margin-top: 12px;">
+                <h4 style="margin: 0; font-size: 15px; color: var(--th-navy);">B.Tech in Electronics &amp; Communication Engineering</h4>
+                <div style="font-size: 13px; font-weight: 600; color: var(--th-muted);">Bihar Engineering University (BEU), Patna</div>
               </div>
             </div>
 
@@ -634,41 +649,27 @@
             <div
               style="background: #fff; border: 1px solid var(--th-border); border-radius: 12px; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.01);">
               <h3
-                style="margin-top: 0; color: var(--th-navy); border-bottom: 2px solid var(--th-bg); padding-bottom: 8px; font-family: 'Nunito', sans-serif;">
-                Languages</h3>
-              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px;">
-                <span class="tag"
-                  style="background: #e8f5e9; border-color: #c8e6c9; color: var(--th-green); font-weight: bold; font-size: 12px;">English</span>
-                <span class="tag"
-                  style="background: #e8f5e9; border-color: #c8e6c9; color: var(--th-green); font-weight: bold; font-size: 12px;">Hindi</span>
-                <span class="tag"
-                  style="background: #e8f5e9; border-color: #c8e6c9; color: var(--th-green); font-weight: bold; font-size: 12px;">Japanese
-                  (N5)</span>
+                style="margin-top: 0; color: var(--th-navy); border-bottom: 2px solid var(--th-bg); padding-bottom: 8px; font-family: 'Nunito', sans-serif;">Languages</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px;">
+                <span class="tag" style="font-size: 12px;">English (Professional)</span>
+                <span class="tag" style="font-size: 12px;">Hindi (Native)</span>
               </div>
             </div>
 
           </div>
-
         </div>
-
       </section>
 
+      <!-- ===== RIGHT TOC SIDEBAR ===== -->
+      <aside class="toc" aria-label="On this page">
+        <div class="toc-label">On This Page</div>
+        <div class="toc-list" id="tocList"></div>
+      </aside>
+
     </main>
-
-    <!-- ============ RIGHT SIDEBAR — TOC ============ -->
-    <aside class="toc" id="toc" aria-label="On this page">
-      <div class="toc-label">On This Page</div>
-      <div class="toc-list" id="tocList"></div>
-      <div class="toc-card" id="tocReadiness">
-        <h4>Quick Stats</h4>
-        <div class="small" style="font-weight: 700;">Admin Skill Score: 71%</div>
-      </div>
-    </aside>
-
   </div>
 
-  <script src="projects-data.js?v=1.0.1"></script>
-  <script src="app.js?v=1.0.1"></script>
+  <script src="projects-data.js"></script>
+  <script src="app.js"></script>
 </body>
-
 </html>
